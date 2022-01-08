@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.yellow_blob{
+  position: fixed;
+  right: 0;
+  width: 15vw;
+  height: 15vh;
+  z-index: -1;
+}
+
+
+.blue_blob{
+  position: fixed;
+  bottom: 0;
+  width: 15vw;
+  height: 15vh;
+  z-index: -1;
+}
+
+.startWindow{
+  display: flex;
+  height: 100vh;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start__title{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5em;
+
+  color: #293264;
+
+  margin-bottom: 10px;
+}
+
+.start__description{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+
+  color: #293264;
+
+  margin-bottom: 30px;
+}
+
+.button{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2em;
+
+  color: #F5F7FB;
+
+  padding: 16px 100px;
+  background: #4D5B9E;
+
+  border-radius: 15px;
+
+  box-shadow: 0 0 0;
+
+  cursor: pointer;
+}
+
+.quiz{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 20px 0;
+}
+
+.question__title{
+  padding-top: 20px;
+  padding-bottom: 15px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  color: #293264;
+}
+
+.question__answers{
+  display: flex;
+}
+
+.answer{
+  border-radius: 8px;
+  background: #ffffff;
+  color: #293264;
+  border: 1px solid #4D5B9E;
+
+  box-sizing: border-box;
+
+  padding: 5px 20px;
+  margin-right: 15px;
+
+  cursor: pointer;
+}
+
+.answer.selected{
+  background: #D6DBF5;
+  border: 1px solid #D6DBF5;
+}
+
+.questions{
+  width: 65vw;
+}
+
+.line{
+  margin-top: 20px;
+  border: 1px solid #DBDEF0;
+}
+
+.answer.correct{
+  background: #94D7A2;
+  border: 1px solid #94D7A2;
+}
+
+.answer.incorrect{
+  background: #F8BCBC;
+  border: 1px solid #F8BCBC;
+}
+
+.result{
+  margin-top: 20px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2em;
+
+  color: #293264;
+
+}
+
+.loading{
+  font-style: normal;
+  font-size: 5em;
+}
